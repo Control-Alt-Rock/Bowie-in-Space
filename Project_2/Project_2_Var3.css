@@ -1,0 +1,87 @@
+body {
+  margin: 0 auto;
+  font-family: didot;
+  background: rgba(204, 204, 204,0.2);
+}
+
+h1 {
+	color: turquoise;
+	text-transform: uppercase;
+	border: 4px solid orange;
+	border-radius: 20px;
+	display:inline-block;
+	padding:20px;
+}
+
+div {
+	font-size: 26px;
+	width: 560px;
+	padding-bottom: 30px;
+}
+.centered{ 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.description {
+	color: orange;
+	font-size: 36px;
+	width: 320px;
+	padding-bottom: 30px;
+	padding-left: 40px;
+}
+
+.element {
+	font-size: 60px;
+	padding: 60 20 45 20px;
+color: white;
+background: rgba(0, 0, 255, 0.1);
+border-bottom: 4px
+color: white;
+position: fixed;
+}
+
+.box{
+	color: orange;
+	font-size: 36px;
+	text-align: center;
+	width: 300px;
+	padding-bottom: 60px;
+	padding-top: 240px;
+	display: block;
+}
+
+h4{
+	color: orange;
+	text-align: center;
+	font-size: 32px;
+	width: 360px; 
+}
+
+.disappointing{
+	font-size: 32px;
+	text-align: center;
+	color: white;
+	width: 360px;
+background: blue;
+border: 1px solid blue;
+margin-bottom: 40px;
+padding: 15px;
+float: right;
+}
+
+.below{
+	font-size: 22px;
+	width: 520px;
+	padding-bottom: 40px;
+}
+
+.end{
+	width: 480px;
+	text-align: center;
+	background: blue;
+	border: 4px solid blue;
+	color: white;
+	padding: 20px;
+	float: right;
+}

@@ -1,0 +1,91 @@
+body {
+  background-color: gray;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+div {
+	font-family: thonburi;
+	font-size: 22px;
+	width: 600px;
+	padding-bottom: 30px;
+}
+
+.centered{ 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.description {
+	font-family: thonburi;
+	color: yellow;
+	font-size: 24px;
+	width: 320px;
+	padding-bottom: 45px;
+}
+
+.element {
+	font-family: thonburi;
+	font-size: 40px;
+	text-align: right;
+	margin-right: auto;
+	padding-bottom: 60px;
+	padding-top: 45px;
+	padding-right: 45px;
+background: black;
+border: 1px solid black;
+border-radius: 3px;
+color: yellow;
+}
+
+.element:hover {
+  background: yellow;
+  color: black;
+}
+
+.box{
+	font-family: thonburi;
+	font-size: 22px;
+	width: 800px;
+	padding-bottom: 60px;
+}
+
+h4{
+	color: yellow;
+	text-align: center;
+	font-family: thonburi;
+	font-size: 32px;
+	width: 360px; 
+}
+
+.disappointing{
+	font-family: thonburi-bold;
+	font-size: 32px;
+	text-align: center;
+	width: 360px;
+background: yellow;
+border: 1px solid yellow;
+margin-bottom: 40px;
+padding: 15px;
+}
+
+.below{
+	font-family: thonburi;
+	font-size: 22px;
+	width: 360px;
+	padding-bottom: 40px;
+}
+
+.end{
+	width: 480px;
+	text-align: center;
+	background: black;
+	border: 4px solid black;
+	color: yellow;
+	padding: 20px;
+}
+
+.end:hover {
+  background: yellow;
+  color: black;
+}

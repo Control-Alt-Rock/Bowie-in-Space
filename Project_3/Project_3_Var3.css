@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(180deg, rgba(204, 204, 204,0.2) 25%, purple);
+		width:100px;
+		height:100px;
+		margin: 60px;
+	font-family: didot;
+}
+
+div {
+	font-size: 16px;
+	width: 300px;
+	padding-bottom: 30px;
+}
+.centered{ 
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.element {
+	font-size: 45px;
+	color: white;
+	background: rgba(0, 0, 255, 0.1);
+	margin-right: auto;
+	padding: 40px;
+	color: white;
+	position: fixed;
+	right: 60px;
+	width: 400px;
+}
+
+.box{
+	color: orange;
+	font-size: 36px;
+	text-align: center;
+	width: 300px;
+	padding-bottom: 60px;
+	padding-top: 240px;
+	display: block;
+}
+
+h4{
+	color: orange;
+	text-align: center;
+	font-size: 36px;
+	width: 300px; 
+}
+
+.disappointing{
+	font-size: 32px;
+	text-align: center;
+	color: orange;
+	width: 300px;
+}
+
+.end{
+	width: 260px;
+	text-align: center;
+	background: rgba(0, 0, 255, 0.1);
+	border: 1px solid rgba(0, 0, 255, 0.1);
+	color: white;
+	padding: 20px;
+	float: left;
+}

@@ -1,0 +1,89 @@
+body {
+  background-color: teal;
+  margin: 0 auto;
+}
+
+h1 {
+	color: turquoise;
+	text-transform: uppercase;
+	font-family: gotham;
+	border: 4px solid red;
+	border-radius: 20px;
+	display:inline-block;
+	padding:20px;
+}
+
+div {
+	font-family: gotham;
+	font-size: 22px;
+	width: 360px;
+	padding-bottom: 30px;
+}
+.centered{ 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.description {
+	font-family: gotham;
+	color: red;
+	font-size: 24px;
+	width: 320px;
+}
+
+.element {
+	font-family: gotham;
+	font-size: 40px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 60px;
+	padding-top: 45px;
+background: red;
+border: 1px solid red;
+border-radius: 3px;
+color: white;
+}
+
+.box{
+	font-family: gotham;
+	font-size: 22px;
+	text-align: center;
+	width: 360px;
+	padding-bottom: 60px;
+}
+
+h4{
+	color: turquoise;
+	text-align: center;
+	font-family: gotham;
+	font-size: 32px;
+	width: 360px; 
+}
+
+.disappointing{
+	font-family: gotham;
+	font-size: 32px;
+	text-align: center;
+	width: 360px;
+background: turquoise;
+border: 1px solid turquoise;
+margin-bottom: 40px;
+padding: 15px;
+}
+
+.below{
+	font-family: gotham;
+	font-size: 22px;
+	width: 360px;
+	padding-bottom: 40px;
+}
+
+.end{
+	width: 480px;
+	text-align: center;
+	background: red;
+	border: 4px solid red;
+	color: white;
+	padding: 20px;
+}
