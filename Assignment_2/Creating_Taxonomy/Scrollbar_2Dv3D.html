@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Scrollbar_Dimensionality</title>
+  	<style>
+      body {font-size: 16pt;
+      		background: rgb(143, 219, 255);
+      		font-family: futura;
+      		color: rgb(93, 148, 198);
+          line-height: 1.4em;
+      }
+
+
+#myGrid {
+        margin: 20px;
+        
+        display: grid;
+      
+        grid-template-rows: 300px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px;
+        grid-template-columns: 386px 386px 386px 386px 386px 386px; 
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        padding: 80px;
+      }
+
+  .header_01 {
+  font-size: 36pt;
+  line-height: 1.4em;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  position: relative;
+  left: 20px;
+  top: -60px;
+  z-index: 0;
+}
+
+.header_02 {
+  font-size: 36pt;
+  line-height: 1.4em;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  position: relative;
+  left: 20px;
+  z-index: 0;
+}
+
+.p_01{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    font-size: 8pt;
+    line-height: 1.4em;
+}
+
+.p_02{
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 8pt;
+    line-height: 1.4em;
+}
+
+.image_interface_01{
+    width: 200px;
+    height: 250px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.cell_interface_01{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 386px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+    background: white;
+    z-index: 1;
+    overflow: hidden;
+    background: url(https://upload.wikimedia.org/wikipedia/en/7/78/Macosxpb.png)no-repeat;
+    background-size:contain;
+}
+
+.cell_interface_01 div {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background: rgba(255, 255, 255, 0.9);
+    height:2px;
+    transition: height 200ms ease-in-out;
+    overflow: hidden;
+}
+
+.cell_interface_01:hover div {
+  height:288px;   
+}
+
+.cell_02{
+width: 386px;
+height: 4400px;
+background: rgba(255, 255, 255, 0.4); 
+grid-row-start: 1;
+grid-row-end: auto;
+grid-column-start: 1;
+grid-column-end: 3;
+position: relative;
+top: -60px;
+z-index: -1;
+}
+
+
+.subheader_01{
+  position: relative;
+  left: 140px;
+  top: 110px;
+  text-align: center;
+  left-margin: auto;
+  right-margin: auto;
+}
+
+#myDIV {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: none;
+}
+
+#myDIV_02{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: none;
+}
+
+#myDIV_03{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: none;
+}
+
+#myDIV_04{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: none;
+}
+
+#myDIV_05{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: none;
+}
+
+#myDIV_06{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: none;
+  }
+
+  #myDIV_07{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: none;
+  }
+
+  #myDIV_08{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: none;
+  }
+
+  #myDIV_09{
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: none;
+  }
+
+  #myDIV_10{
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: none;
+  }
+
+  #myDIV_11{
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: none;
+  }
+
+  #myDIV_12{
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: none;
+  }
+
+#hi {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 16pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: -100px;
+  left: 20px;
+
+}
+
+#hi_02 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 12pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: -100px;
+  left: 140px;
+}
+
+#hi_03 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 10pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: -100px;
+  left: 260px;
+}
+
+#hi_04 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 10pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: 10px;
+  left: 20px;
+}
+
+#hi_05 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 10pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: 10px;
+  left: 140px;
+}
+
+#hi_06 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 10pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: 10px;
+  left: 260px;
+}
+
+#hi_07 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 10pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: 120px;
+  left: 20px;
+}
+
+#hi_08 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 10pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: 120px;
+  left: 140px;
+}
+
+#hi_09 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 10pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: 120px;
+  left: 260px;
+}
+
+#hi_10 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 8pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: 230px;
+  left: 20px;
+}
+
+#hi_11 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 10pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: 230px;
+  left: 140px;
+}
+
+#hi_12 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 100px;
+  height: 75px;
+  font-size: 10pt;
+  font-family: futura;
+  color: rgb(93, 148, 198);
+  line-height: 1.4em;
+  position: relative;
+  border-radius: 30px;
+  top: 230px;
+  left: 260px;
+}
+
+.image_01 {
+  grid-row-start: 9;
+  grid-row-end: 10;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_01 {
+  grid-row-start: 9;
+  grid-row-end: 10;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_02 {
+  grid-row-start: 9;
+  grid-row-end: 10;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_02 {
+  grid-row-start: 9;
+  grid-row-end: 10;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_03 {
+  grid-row-start: 10;
+  grid-row-end: 11;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_03 {
+  grid-row-start: 10;
+  grid-row-end: 11;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_04 {
+  grid-row-start: 10;
+  grid-row-end: 11;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_04 {
+  grid-row-start: 10;
+  grid-row-end: 11;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_05 {
+  grid-row-start: 11;
+  grid-row-end: 12;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_05 {
+  grid-row-start: 11;
+  grid-row-end: 12;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_06 {
+  grid-row-start: 11;
+  grid-row-end: 12;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_06 {
+  grid-row-start: 11;
+  grid-row-end: 12;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_07 {
+  grid-row-start: 12;
+  grid-row-end: 13;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_07 {
+  grid-row-start: 12;
+  grid-row-end: 13;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_08 {
+  grid-row-start: 12;
+  grid-row-end: 13;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_08 {
+  grid-row-start: 12;
+  grid-row-end: 13;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_09 {
+  grid-row-start: 13;
+  grid-row-end: 14;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_09 {
+  grid-row-start: 13;
+  grid-row-end: 14;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_10 {
+  grid-row-start: 13;
+  grid-row-end: 14;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_10 {
+  grid-row-start: 13;
+  grid-row-end: 14;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_11 {
+  grid-row-start: 14;
+  grid-row-end: 15;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_11 {
+  grid-row-start: 14;
+  grid-row-end: 15;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_12 {
+  grid-row-start: 14;
+  grid-row-end: 15;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_12 {
+  grid-row-start: 14;
+  grid-row-end: 15;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+.image_13 {
+  grid-row-start: 15;
+  grid-row-end: 16;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 75px;
+  height: 250px;
+  z-index: 1;
+}
+
+.des_13 {
+  grid-row-start: 15;
+  grid-row-end: 16;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 8pt;
+  line-height: 1.4em;
+  width: 190px;
+  position: relative;
+  left: 100px;
+  color: white;
+  z-index: 2;
+}
+
+
+
+        </style>
+
+  </head>
+  <body>
+
+    <div id="myGrid">
+
+      <p class=header_01> 2D Interfaces /
+        <br /> 3D Interfaces
+      </p>
+
+      <p class=header_02>
+        2D Scrollbars / <br /> 3D Scrollbars
+      </p>
+
+      <p class=cell_01>
+        
+      </p>
+
+      <p class=cell_02>
+        
+      </p>
+
+      <div class=cell_interface_01>
+        <div>
+          <span class=subheader_01>
+            Mac OSX<br />(2001)
+          </span>
+      </div>
+    </div>
+    
+
+    <p class="p_01">
+      Scrollbars present a handy alternative to scrolling through multiple pages. The element allows users to navigate along a continuous thread of code without any restrictive pauses. Along with their exceptional use as a tool they are among the most diversely stylized graphic elements of a web page. Most of the scrollbars we observe today are products of developmental limitations. Not only does the scrollbar have to guide the user, it also has to be distinguishable and easy to operate. A scrollbar acts as a stand-in for a map, one that is required to symbolically announce its function and successfully lead the user to their desired destination. 
+
+      <br /><br />In order to express the intent of my comparative analysis, I have displayed interfaces in the same manner in which I will assess scrollbars, from two dimensional to three dimensional.
+
+      <br /><br /><em style="color: white">left</em> Mac OSX is an example of the full utilization of graphic components. The complex lacquer of the display is a celebration of these cool new capabilities, and they are utilized to their fullest. 
+
+      <br /><br />Please click the buttons below to reveal the ordered list of desktop interfaces 
+      <br />(if you are so inclined)
+    </p>
+
+
+
+    <p class="p_02">
+      As demonstrated by the display above, chronology does not always correspond with aesthetic qualities. For example, the Windows 8 format reverted back to a flat, two dimensional aesthetic that had not been incorporated in any recent interfaces during that time. 
+
+      <br /><br />Ressurgences of styles can pop up in the most unlikely of times. Innovations such as the one integrated by Windows 8 influence other developers to apply the same qualities, forming trends that can last for several decades if successful. The three dimensional characteristics reigned supreme in the mid to late 00's, until another one rose to popularity. 
+
+      <br /><br />The same could be said for scrollbars, as they have experienced a similar history. Each one strives to become the most user accessible. Interestingly the format has evolved from a visual signifier into a swiping motion. Touchscreen technology has drastically altered the formula of a scrollbar, so much that the device may soon disappear entirely.
+    </p>
+
+    <img class=image_05 src="../Scrollbar_UI_Element/01_Xerox_Star.png">
+
+<p class="des_05"><strong style="font-size: 18pt"> Xerox Star</strong> <br /><br /><em style="font-size: 14pt">1981</em>
+<br /><br />Orbiting the atmosphere, the Xerox Star looks as if it was used by astronauts exploring the deep depths of space. Using massive arrow keys that face inward (as they communicating the motion of text, ascending as you scroll down), the Star tried it's best to be accessable to an office environment. The handle is interestingly in the shape of a diamond, suggesting a directional quality that might help to express the action of motion.</p>
+
+    <img class=image_09 src="../Scrollbar_UI_Element/02_Apple_Lisa.png">
+
+    <p class="des_09"><strong style="font-size: 18pt"> Apple Lisa</strong> <br /><br /><em style="font-size: 14pt">1983</em>
+<br /><br />Apple Lisa borrows several visual queues from Xerox Star, yet it condenses them into with suggestive line work and an icon system. The Lisa contains many additive buttons, yet it set the standard for the representation of scrollbars to come.</p>
+
+    <img class=image_04 src="../Scrollbar_UI_Element/03_Macintosh.png">
+
+<p class="des_04"><strong style="font-size: 18pt"> Macintosh</strong> <br /><br /><em style="font-size: 14pt">1984</em>
+<br /><br />The first Macintosh scrollbar refined the complex system used with the Lisa. Unlike its predecessor, the new scrollbar is elongated and simplified down to it's necessary components.</p>
+
+    <img class=image_02 src="../Scrollbar_UI_Element/04_Windows.png">
+
+<p class="des_02"><strong style="font-size: 18pt"> Windows</strong> <br /><br /><em style="font-size: 14pt">1985</em>
+<br /><br />The original Windows scrollbar interestingly uses a red background which distinguishes it from its contemporaries. It traditionally uses top and bottom arrow keys as well as a bottom icon which allows convenient access to the first page of the website.</p>
+
+    <img class=image_07 src="../Scrollbar_UI_Element/05_NeXT_Step.png">
+
+<p class="des_07"><strong style="font-size: 18pt"> NeXTstep</strong> <br /><br /><em style="font-size: 14pt">1989</em>
+<br /><br />NeXtstep successfully pioneered innovations of both interface and scrollbar development. By reconfiguring format and display elements, the interface introduced the notion of three dimensional surfaces. Resembling a cyberpunk interpretation of the future, the synthetic, mechanical quality eve suggested a grip on the handle. It also reduced it down to simply two arrow keys.</p>
+
+    <img class=image_08 src="../Scrollbar_UI_Element/06_Windows_3.0.png">
+
+<p class="des_08"><strong style="font-size: 18pt"> Windows 3.0</strong> <br /><br /><em style="font-size: 14pt">1990</em>
+<br /><br />Windows 3.0 quiets the bombastic original Windows scrollbar, and takes a far more subtle approach. Instead of screaming at the viewer to look upon the scrollbar, Windows 3.0 suggests the functionality of the element. With inward facing arrows and a minute handle, Windows 3.0 unifies the scrollbar into something extremely simple. </p>
+
+    <img class=image_12 src="../Scrollbar_UI_Element/07_Mac_OS_08.png">
+
+<p class="des_12"><strong style="font-size: 18pt"> Mac OS 8</strong> <br /><br /><em style="font-size: 14pt">1997</em>
+<br /><br />Ominously lurking in the shadows, Mac OS 8 uses contours, eeie tones and shading to guide the user along the webpage.</p>
+
+    <img class=image_13 src="../Scrollbar_UI_Element/08_Mac_OSX.png">
+
+<p class="des_13"><strong style="font-size: 18pt"> Mac OSX</strong> <br /><br /><em style="font-size: 14pt">2001</em>
+<br /><br />Sliding through pages never looked so emotive. The Mac OSX scrollbar looks as if the blunt handle fits into a crevice. The blue-ringed pattern fully implements graphic capabilities available at the time. the developers used what was available to its fullest.</p>
+
+    <img class=image_11 src="../Scrollbar_UI_Element/09_Windows_XP.png">
+
+<p class="des_11"><strong style="font-size: 18pt"> Windows XP</strong> <br /><br /><em style="font-size: 14pt">2001</em>
+<br /><br />Condensing onto the screen, the Windows XP scrollbar uses an icy blue tone that draws focus to the element. The use of color and clear separation between the handle and arrow keys communicates function in a concise manner.</p>
+
+    <img class=image_03 src="../Scrollbar_UI_Element/10_IOS.png">
+
+<p class="des_03"><strong style="font-size: 18pt"> IOS</strong> <br /><br /><em style="font-size: 14pt">2007</em>
+  <br /><br />Bursting onto the scene in 2007, IOS introduced touch screen technology. The user instead of clicking and dragging the scrollbar, the person swiped the screen. As a result, the scrollbar disappeared when not in use. The elimination of the arrow keys and streamlined appearance made it perfect for it's mobile format, ie. iPhone, iPod, iPad. The narrow rounded rectangle kept in line with Apples stylistic decision made with OSX in 2000.
+</p>
+
+    <img class=image_10 src="../Scrollbar_UI_Element/12_Windows_7.jpg">
+
+<p class="des_10"><strong style="font-size: 18pt"> Windows 7</strong> <br /><br /><em style="font-size: 14pt">2009</em>
+<br /><br />Windows 7 comprises the arrow keys into the scrollbar itself, while beautifully rendering the handle with shading and three dashes the resemble the grip idea from NeXTstep. The plain background draws focus to the handle, placing in a prominent manner that establishes a clear focal point for the user.</p>
+
+    <img class=image_06 src="../Scrollbar_UI_Element/11_OSX_Lion.png">
+
+<p class="des_06"><strong style="font-size: 18pt"> OSX Lion</strong> <br /><br /><em style="font-size: 14pt">2011</em>
+<br /><br />Taking the concept of facilitating to the bear minimum, the avant-garde OSX Lion scrollbar nearly dissipates aside from when someone is swiping the screen, mouse sensor, or trackpad. The elusive rounded rectangle relies of the user understanding the controls of the new interface, while discarding the old method of click-and-drag.</p>
+
+    <img class=image_01 src="../Scrollbar_UI_Element/13_Windows_8.jpg">
+
+<p class="des_01"><strong style="font-size: 18pt"> Windows 8</strong> <br /><br /><em style="font-size: 14pt">2011</em>
+  <br /><br />The aforementioned Windows 8 (2011) managed to bring back the flat, self aware aesthetic, present before the innovations of three dimensional graphics. This scrollbar simply uses a gray rectangle as a handle, lacking arrow keys on either side.
+</p>
+
+
+
+
+
+<button id="hi" onclick="myFunction1()">Next</button>
+
+<div id="myDIV">
+  <img src="https://betanews.com/wp-content/uploads/2012/11/Windows-8-UX-Pack.png" 
+  width="380"
+  height="250" 
+  >
+</div>
+
+<script>
+function myFunction1() {
+    var x = document.getElementById("myDIV");
+
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<button id="hi_02" onclick="myFunction2()">The Guess Who</button>
+
+<div id="myDIV_02">
+  <img src="https://zdnet1.cbsistatic.com/hub/i/r/2015/07/23/db9b07b8-1bd3-4451-9365-7bd336f4d7dd/resize/1170x878/6a5511eafc6e9a454add33945466f8ed/cmwindows1-0jul15a.jpg"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction2() {
+    var x = document.getElementById("myDIV_02");
+
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<button id="hi_03" onclick="myFunction3()">It's Buisiness Time</button>
+
+<div id="myDIV_03">
+  <img src="http://images.granneman.com/tech-history/xerox_star_property_sheet.jpg"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction3() {
+    var x = document.getElementById("myDIV_03");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<button id="hi_04" onclick="myFunction4()">You Monster Frisbee!</button>
+
+<div id="myDIV_04">
+  <img src="https://gigaom.com/wp-content/uploads/sites/1/2011/05/macwritewp.png?w=300"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction4() {
+    var x = document.getElementById("myDIV_04");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<button id="hi_05" onclick="myFunction5()">I'm Firin' my Lasor!</button>
+
+<div id="myDIV_05">
+  <img src="https://guidebookgallery.org/pics/gui/applications/office/notepad/win30.png"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction5() {
+    var x = document.getElementById("myDIV_05");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+<button id="hi_06" onclick="myFunction6()">Leeeeroy Jenkins!</button>
+
+<div id="myDIV_06">
+  <img src="http://lowendmac.com/wp-content/uploads/lisa9.png"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction6() {
+    var x = document.getElementById("myDIV_06");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+<button id="hi_07" onclick="myFunction7()">My arm, it's right above you!</button>
+
+<div id="myDIV_07">
+  <img src="http://www.thevrtales.com/wp-content/uploads/2015/04/MacOS8.0.png"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction7() {
+    var x = document.getElementById("myDIV_07");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<button id="hi_08" onclick="myFunction8()">Yoda Jokes</button>
+
+<div id="myDIV_08">
+  <img src="https://raw.githubusercontent.com/SunDi3yansyah/mac-osx-lion-theme/master/screenshot.png"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction8() {
+    var x = document.getElementById("myDIV_08");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<button id="hi_09" onclick="myFunction9()">CGI Dwayne The Rock Johnson</button>
+
+<div id="myDIV_09">
+  <img src="http://toastytech.com/guis/opensteptextedit.png"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction9() {
+    var x = document.getElementById("myDIV_09");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<button id="hi_10" onclick="myFunction10()">Washington, Washington, Six foot Twenty</button>
+
+<div id="myDIV_10">
+  <img src="https://i.stack.imgur.com/uSIJx.jpg"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction10() {
+    var x = document.getElementById("myDIV_10");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<button id="hi_11" onclick="myFunction11()">Another One</button>
+
+<div id="myDIV_11">
+  <img src="http://everythingiseverything.com/files/2010/11/zack_chat.png"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction11() {
+    var x = document.getElementById("myDIV_11");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<button id="hi_12" onclick="myFunction12()">You Shall Not Pass!</button>
+
+<div id="myDIV_12">
+  <img src="https://cdn.arstechnica.net/images/windows7/Peek%20-%20Before.png"
+  width="380"
+  height="250"
+  >
+</div>
+
+<script>
+function myFunction12() {
+    var x = document.getElementById("myDIV_12");
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+</div>
+</body>
+</html>
