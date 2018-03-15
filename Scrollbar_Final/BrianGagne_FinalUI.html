@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Scrollbar_Dimensionality</title>
+  	<style>
+      body {font-size: 16pt;
+      		background: rgb(204, 204, 204);
+      		font-family: caslon;
+      		color: white;
+          line-height: 1.4em;
+      }
+
+#myGrid {
+        margin: 20px;
+        
+        display: grid;
+      
+        grid-template-rows: 551px 80px 100px;
+        grid-template-columns: 10px 832px 300px 100px;
+        grid-gap: 40px;
+        padding: 20px;
+      }
+
+.image{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 832px;
+  height: 551px;
+}
+
+.header{
+  font-size: 65pt;
+  letter-spacing: 3px;
+  color: red;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+  top: -50px;
+  left: 30px;
+  z-index: 1;
+}
+
+.Subheader{
+  font-size: 16pt;
+  line-height: 1.2em;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  position: relative;
+  top: -26px;
+}
+
+.block{
+width: auto;
+height: 80px;
+background: white; 
+grid-row-start: 2;
+grid-row-end: 3;
+grid-column-start: 2;
+grid-column-end: 5;
+position: relative;
+top: -10px;
+z-index: -1;
+}
+
+.names{
+  font-family: helvetica;
+  font-size: 8pt;
+  line-height: 1.8em;
+  color: red;
+}
+
+.p_01{
+  font-size: 10pt;
+  line-height: 1.4em;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  position: relative;
+  top: -26px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+} 
+
+</style>
+
+  </head>
+  <body>
+
+<div id="myGrid">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<img class=image src="../Scrollbar_Final/Images/Scrollman.JPG">
+
+<p class="header">NAVIGATOR <span class="small" style="font-size: 12pt">Directed by El Segundo</span></p>
+
+<p class="block"></p>
+
+<p class="Subheader"><em>Riveting plotline with unexpected naunce. Johnny Mathematics ...what can I say that hasn't already been said. Best performance of the year.</em><br />
+  <span class="names">—Jeff Goldbloom</span>
+
+  <br /><br /><em>Will make you cry tears of joy. Johnny Mathematics provides yet another powerful, moving and three dimensional performance. How does he do it?</em><br />
+  <span class="names">—Daniel Kaluuya</span>
+
+  <br /><br /><em>Apple needs to start taking notes. Where has the scrollbar gone? A film that's a guaranteed academy pick, topical subject matter in a time of frantic confusion.</em><br />
+  <span class="names">—https://www.Soundcloudreviewsmoviesnow?.com</span></p>
+
+<p class="p_01"> 
+  Ustus Irons happens upon a taboo forum in the dark web and witnesses an image so volitile, it permanantly scars his face. Now, a broken man, Ustus becomes reclusive and wears a scrollbar mask in order to warn others of scrolling down too far on a web page, and in turn, learning more about people.
+
+  While working at a printing press, Ustus catches the eye of Silvio Bara, who begins developing romantic feelings towards the scrollbar obsessed miscreant. With Silvio's help, Ustus opens up his heart and begins to socialize more with his fellow pressman. 
+
+  Could the tool that once scarred him, also serve to replenish his social standing? Watch the drmatic transition from a bland two dimensionl character, into a fully realized three dimensional archetype.
+</p>
+
+</div>
+</body>
+</html>
