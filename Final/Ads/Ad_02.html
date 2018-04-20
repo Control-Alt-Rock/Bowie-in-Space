@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Dark Pattern_Ad_01</title>
+  	<style>
+
+    #myGrid {
+        
+        display: grid;
+      
+        grid-template-rows: 350px 120px 40px 15px;
+        grid-template-columns: 200px 120px 200px 60px; 
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        padding: 20px;
+      }
+
+      body {
+        font-size: 24pt;
+      	font-family: 'Futura';
+      	color: red;
+        line-height: 2em;
+            }
+
+    </style>
+
+</head>
+<body>
+                 <style>
+
+.Header{
+  position: relative;
+  left: -20px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 120px;
+  line-height: 1.2em;
+  font-width: 80px;
+
+}
+.body{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 20px;
+  line-height: 1.2em;
+
+}
+
+#myDIV{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: none;
+}
+
+#myDIV_02{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: none;
+}
+
+                </style>
+
+<div id="myGrid">
+
+<p class="Header"> 15% <br /> OFF </p> 
+
+<p class="body"><strong style="line-height: 3em">May 5-31</strong><br /> Summer Clearance <br /><span style="font-size: 12px">prices may vary</span></p>
+
+<button id="button_01" 
+style="
+  position: relative;
+  left: -12px;
+  overflow: hidden;
+  width: 200px;
+  height: 75px;
+  font-size: 8pt;
+  font-family: FranklinGothic URW;
+  color: red;
+  border: 1px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  "
+  onclick="myFunction1()">Want more deals? Send me notifications</button>
+
+<div id="myDIV">
+  <img src="https://betanews.com/wp-content/uploads/2012/11/Windows-8-UX-Pack.png" 
+  width="380"
+  height="250" 
+  >
+</div>
+
+<script>
+
+function myFunction1() {
+    var x = document.getElementById("myDIV");
+
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+</script>
+
+
+<button id="button_02" 
+style="
+  position: relative;
+  left: 200px;
+  overflow: hidden;
+  width: 250px;
+  height: 75px;
+  font-size: 8pt;
+  font-family: FranklinGothic URW;
+  color: red;
+  border: 1px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;"
+  onclick="myFunction2()">No, unsubscribe me from notifications list</button>
+
+<div id="myDIV_02">
+  <img src="https://betanews.com/wp-content/uploads/2012/11/Windows-8-UX-Pack.png" 
+  width="380"
+  height="250" 
+  >
+</div>
+
+<script>
+
+function myFunction2() {
+    var x = document.getElementById("myDIV_02");
+
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+</script>
+
+
+</head>
+</html>

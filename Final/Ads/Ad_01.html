@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Dark Pattern_Ad_01</title>
+  	<style>
+
+    #myGrid {
+        
+        display: grid;
+      
+        grid-template-rows: 350px 120px 40px 15px;
+        grid-template-columns: 200px 120px 200px 60px; 
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        padding: 20px;
+      }
+
+      body {
+        font-size: 24pt;
+      	font-family: 'Futura';
+      	color: red;
+        line-height: 2em;
+            }
+
+    </style>
+
+</head>
+<body>
+                 <style>
+
+.Header{
+  position: relative;
+  left: -20px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 120px;
+  line-height: 1.2em;
+  font-width: 80px;
+
+}
+.body{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 20px;
+  line-height: 1.2em;
+  width:;
+
+}
+
+#myDIV{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: none;
+}
+
+#myDIV_02{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: none;
+}
+
+#myCheck{
+  position:relative;
+  right: 2px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#myCheck_02{
+  position:relative;
+  left: 258px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.sub_01{
+  position:relative;
+  top: -6px;
+  left: 20px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 10px;
+  line-height: 1.2em;
+}
+
+.sub_02{
+  position:relative;
+  top: -6px;
+  left: 280px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-size: 10px;
+  line-height: 1.2em;
+}
+
+.May{
+  font-size: 24px;
+  line-height: 1.8em;
+  letter-spacing: 1.6px;
+}
+
+                </style>
+
+
+
+
+<div id="myGrid">
+
+<p class="Header"> 15% <br /> OFF </p> 
+
+<p class="body"><strong class="May">May 5-31</strong><br /> Summer Clearance <br /><span style="font-size: 12px">Prices may vary</span></p>
+
+<p class="sub_01">Want more deals, send me notifications</p>
+
+<p class="sub_02">No, unsubscribe me from notifications</p>
+
+
+  <input onchange="changer('http://www.google.com')" type="checkbox" id="myCheck">
+
+  <script>
+  function changer(url){
+  console.log('yop')
+  window.location.href = url
+  }
+
+  function myFunction_01() {
+    var x = document.getElementById("myCheck");
+    x.checked = true;
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+  }
+
+  </script>
+
+
+
+<input onchange="changer('http://www.youtube.com')" type="checkbox" id="myCheck_02">
+
+    <script>
+    
+    function myFunction_02() {
+    var x = document.getElementById("myCheck_02");
+    x.checked = true;
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+      }
+    }
+
+    </script>
+
+
+
+</head>
+</html>

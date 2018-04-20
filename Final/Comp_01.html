@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Dark Pattern</title>
+  	<style>
+      body {font-size: 8pt;
+      		background: rgb(143, 219, 255);
+      		font-family: Athelas;
+      		color: rgb(93, 148, 198);
+          	line-height: 1.4em;
+      }
+
+
+#myCanvas {
+	position: absolute;
+}
+
+  </style>
+
+  </head>
+  <body>
+
+<canvas id="myCanvas" width="300" height="400"></canvas>
+
+<script type="text/javascript">
+	
+	let myCanvas = document.querySelector('#myCanvas')
+
+	// then we need to get its 'drawing context'
+	let myDrawContext = myCanvas.getContext('2d')
+
+	myDrawContext.strokeStyle = "lightgreen"
+	myDrawContext.lineWidth = 3
+
+	myDrawContext.beginPath()
+	for(let x = 1; x < 15; x ++){
+		myDrawContext.moveTo(x * 20,0)
+		myDrawContext.lineTo(x * 20, 300)
+	}
+	myDrawContext.closePath()
+	myDrawContext.stroke()
+
+	myDrawContext.strokeStyle = "pink"
+	myDrawContext.beginPath()
+
+	for(let y = 1; y < 20; y ++){
+		myDrawContext.moveTo(0,y * 20)
+		myDrawContext.lineTo(400, y * 20)
+	}
+	myDrawContext.closePath()
+	myDrawContext.stroke()
+</script>
+  </body>
+
+  </html>
