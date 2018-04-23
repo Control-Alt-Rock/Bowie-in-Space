@@ -9,7 +9,7 @@
         display: grid;
       
         grid-template-rows: 350px 120px 40px 15px;
-        grid-template-columns: 200px 120px 200px 60px; 
+        grid-template-columns: 200px 120px 200px 60px;
         grid-column-gap: 40px;
         grid-row-gap: 40px;
         padding: 20px;
@@ -47,8 +47,6 @@
   grid-column-end: 2;
   font-size: 20px;
   line-height: 1.2em;
-  width:;
-
 }
 
 #myDIV{
@@ -115,6 +113,90 @@
   letter-spacing: 1.6px;
 }
 
+.empty{
+  background: rgba(180, 180, 180, 0.8);
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:6;
+  z-index: -1;
+}
+
+.Header_02{
+  position: relative;
+  left: 40px;
+  color: red;
+  letter-spacing: 3px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:6;
+  z-index: 1;
+}
+
+.body_02{
+  font-size: 16px;
+  position: relative;
+  left: 40px;
+  top: 120px;
+  color: red;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:6;
+  z-index: 1;
+}
+
+.body_03{
+  color: white;
+  line-height: 1.6em;
+  width: 110px;
+  font-size: 12px;
+  position: relative;
+  left: 140px;
+  top: 148px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:3;
+  z-index: 1;
+}
+
+.empty_02{
+  background: rgb(120, 120, 120);
+  position: relative;
+  left: 40px;
+  top: 190px;
+  width: 80px;
+  height: 25px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:2;
+  z-index: 2;
+}
+
+.empty_03{
+  background: rgb(120, 120, 120);
+  position: relative;
+  left: 40px;
+  top: 320px;
+  width: 80px;
+  height: 25px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:2;
+  z-index: 3;
+}
+
+.image{
+  position: relative;
+  left: -280px;
+  width: 1040px;
+  height: 780px;
+}
+
                 </style>
 
 
@@ -126,10 +208,23 @@
 
 <p class="body"><strong class="May">May 5-31</strong><br /> Summer Clearance <br /><span style="font-size: 12px">Prices may vary</span></p>
 
+<p class="Header_02">sign up now</p>
+
+<p class="body_02">email<br /><br />password</p>
+
+<p class="body_03"><em>With a large selection of hats in stock, from trappers to sharp rimmed caps, we got you covered. Style on hatgoers, style on.</em></p>
+
 <p class="sub_01">Want more deals, send me notifications</p>
 
 <p class="sub_02">No, unsubscribe me from notifications</p>
 
+<div class="empty"></div>
+
+<div class="empty_02"></div>
+
+<div class="empty_03"></div>
+
+<img class="image" src="Final/model_01.JPG">
 
   <input onchange="changer('http://www.google.com')" type="checkbox" id="myCheck">
 
