@@ -5,7 +5,7 @@
   	<style>
       body {
         font-size: 24pt;
-      	font-family: 'FranklinGothic URW';
+      	font-family: 'Seravek';
       	color: rgb(93, 148, 198);
         line-height: 2em;
             }
@@ -15,12 +15,12 @@
   <body>
 <section class="rw-wrapper">
     <div class="rw-words rw-words-1">
-      <span>unsubscribe</span>
-      <span>unsubscribe</span>
-      <span>unsubscribe</span>
-      <span>unsubscribe</span>
-      <span>unsubscribe</span>
-      <span>unsubscribe</span>
+      <span>BUY NOW</span>
+      <span>BUY NOW</span>
+      <span>BUY NOW</span>
+      <span>BUY NOW</span>
+      <span>BUY NOW</span>
+      <span>BUY NOW</span>
     </div>
 </section>
 <br />
@@ -60,7 +60,7 @@
   /*opacity: 0;*/
   overflow: hidden;
   width: 100%;
-  color: red;
+  color: rgb(133,31,25);
 }
 
 .rw-words-1 span{
@@ -71,23 +71,23 @@
 }
 .rw-words span:nth-child(2) { 
   animation-delay: 3s; 
-  color: orange;
+  color: rgb(150,32,31);
 }
 .rw-words span:nth-child(3) { 
   animation-delay: 6s; 
-  color: yellow; 
+  color: rgb(179,34,38); 
 }
 .rw-words span:nth-child(4) { 
   animation-delay: 9s; 
-  color: green;
+  color: rgb(196,33,39); 
 }
 .rw-words span:nth-child(5) { 
   animation-delay: 12s; 
-  color: blue;
+  color: rgb(237,37,36);
 }
 .rw-words span:nth-child(6) {  
   animation-delay: 15s; 
-  color: purple;
+  color: rgb(110, 27, 0);
 }
 
 .button_01{
@@ -101,7 +101,7 @@
   font-family: futura;
   color: white;
   letter-spacing: 2px;
-  background: linear-gradient(225deg, rgba(184, 200, 203,0.2) 45%, rgb(78, 179, 255));
+  background: linear-gradient(225deg, rgba(240, 200, 200,0.2) 45%, rgb(237,37,36));
   text-align: center;
   border: 1px;
   border-radius: 20px;
@@ -109,14 +109,17 @@
 }
 
 @keyframes rotateWordsFirst {
+
     0% {
       transform: rotate(0deg);
     }
-    100% { transform: rotate(359.9deg);}
-}
+
+    100% { transform: rotate(359.9deg);
+  }
+                              }
 
 @keyframes rotateWordsSecond {
-    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+    0% { opacity: 1; animation-timing-function: ease-in; width: 0px;}
     10% { opacity: 0.3; width: 0px; }
   20% { opacity: 1; width: 100%; }
     27% { opacity: 0; width: 100%; }
