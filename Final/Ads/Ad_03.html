@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>Dark Pattern_Ad_01</title>
+  	<title>Dark Pattern_Ad_03</title>
   	<style>
 
     #myGrid {
@@ -30,22 +30,23 @@
 
 .Header{
   position: relative;
-  left: -20px;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 1;
-  grid-column-end: 2;
-  font-size: 120px;
+  grid-column-end: 6;
+  font-size: 45px;
   line-height: 1.2em;
   font-width: 80px;
 
 }
 .body{
-  grid-row-start: 2;
-  grid-row-end: 3;
+  position: relative;
+  top: 60px;
+  grid-row-start: 1;
+  grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
-  font-size: 20px;
+  font-size: 80px;
   line-height: 1.2em;
 }
 
@@ -114,20 +115,23 @@
 }
 
 .empty{
-  background: rgba(180, 180, 180, 0.8);
+  position: relative;
+  top: -30px;
+  background: red;
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start:1;
   grid-row-end:6;
-  width: 300px;
-  height: 400px;
+  width: 450px;
+  height: 800px;
   z-index: -1;
 }
 
 .Header_02{
   position: relative;
-  left: 40px;
-  color: red;
+  left: 16px;
+  color: white;
+  width: 440px;
   letter-spacing: 3px;
   grid-column-start: 5;
   grid-column-end: 6;
@@ -192,15 +196,6 @@
   z-index: 3;
 }
 
-.image{
-  position: relative;
-  left: -280px;
-  top: -140px;
-  width: 1248px;
-  height: 936px;
-  z-index: -3;
-}
-
                 </style>
 
 
@@ -208,27 +203,25 @@
 
 <div id="myGrid">
 
-<p class="Header"> 15% <br /> OFF </p> 
+<p class="Header"> Thank you for shopping with us </p> 
 
-<p class="body"><strong class="May">May 5-31</strong><br /> Summer Clearance <br /><span style="font-size: 12px">Prices may vary</span></p>
+<p class="body"><strong class="Item">Charcoal Trapper</strong></p>
 
-<p class="Header_02">sign up now</p>
+<p class="Header_02">Finely crafted year round hat with convenient side flaps used to provide warmth</p>
 
-<p class="body_02">email<br /><br />password</p>
+<p class="body_02">enter card #<br /><br />id<br />name<br /> address<br />shipping method</p>
 
 <p class="body_03"><em>With a large selection of hats in stock, from trappers to sharp rimmed caps, we got you covered. Style on hatgoers, style on.</em></p>
 
-<p class="sub_01">Want more deals, send me notifications</p>
+<p class="sub_01">Want exclusive packaging, earn 15% off on your next in store purchase</p>
 
-<p class="sub_02">No, unsubscribe me from notifications</p>
+<p class="sub_02">No, do not include specialty shipping methods</p>
 
 <div class="empty"></div>
 
 <div class="empty_02"></div>
 
 <div class="empty_03"></div>
-
-<img class="image" src="../model_01.jpg">
 
   <input onchange="changer('http://www.google.com')" type="checkbox" id="myCheck">
 
