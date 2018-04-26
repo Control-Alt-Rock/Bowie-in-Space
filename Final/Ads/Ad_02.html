@@ -80,21 +80,32 @@
   z-index: -1;
 }
 
-#button_01{
+.button_01{
   position: relative;
   left: 120px;
   top: -80px;
   overflow: hidden;
-  width: 400px;
+  width: 500px;
   height: 75px;
   font-size: 24pt;
-  font-family: FranklinGothic URW;
+  font-family: futura;
   color: red;
-  border: 4px;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
+}
+
+.button_02{
+  position: relative;
+  top: 0px;
+  font-size: 12pt;
+  font-family: futura;
+  color: red;
+  display: block;
+  line-height: 1em;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
                 </style>
 
@@ -106,98 +117,12 @@
 
 <img class="image" src="../Hat_Lone.jpg">
 
-<button id="button_01" 
-style="
-  position: relative;
-  left: 120px;
-  top: -80px;
-  overflow: hidden;
-  width: 400px;
-  height: 75px;
-  font-size: 24pt;
-  font-family: FranklinGothic URW;
-  color: red;
-  border: 4px;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  "
-  onclick="myFunction1()"><em>check out our collection<em></button>
+<a class="button_01" href="https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_03.html
+"><em>check out our collection</em></a>
 
-<div id="myDIV">
-  <img src="https://betanews.com/wp-content/uploads/2012/11/Windows-8-UX-Pack.png" 
-  width="380"
-  height="250" 
-  >
-</div>
+<a class="button_02" rel="stylesheet" media="print" href="../HERE_IS_YOUR_HAT.pdf"><em>miss out on the time of your life<em></a>
 
-<script>
-
-function myFunction1() {
-    var x = document.getElementById("myDIV");
-
-    if (x.style.display === "none" || x.style.display === '') {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-</script>
-
-<input onchange="changer('https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_02.html')" type="button" id="button_01">
-
-    <script>
-    
-    function myFunction_02() {
-    var x = document.getElementById("button_01");
-    x.checked = true;
-    if (x.style.display === "none" || x.style.display === '') {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-      }
-    }
-
-    </script>
-
-<button id="button_02" 
-style="
-  overflow: hidden;
-  width: 250px;
-  height: 75px;
-  font-size: 12pt;
-  font-family: FranklinGothic URW;
-  color: red;
-  border: 1px;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 3;
-  grid-column-end: 5;"
-  onclick="myFunction2()"><em>miss out on the time of your life<em></button>
-
-<div id="myDIV_02">
-  <img src="https://betanews.com/wp-content/uploads/2012/11/Windows-8-UX-Pack.png" 
-  width="380"
-  height="250" 
-  >
-</div>
-
-<script>
-
-function myFunction2() {
-    var x = document.getElementById("myDIV_02");
-
-    if (x.style.display === "none" || x.style.display === '') {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-</script>
-
+<pre class="code"></pre>
 
 </head>
 </html>
