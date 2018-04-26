@@ -30,18 +30,21 @@
 
 .Header{
   position: relative;
+  top: 25px;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 6;
-  font-size: 45px;
+  font-size: 25px;
   line-height: 1.2em;
   font-width: 80px;
-
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+
 .body{
   position: relative;
-  top: 60px;
+  top: -60px;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
@@ -68,42 +71,46 @@
 
 #myCheck{
   position:relative;
-  right: 2px;
+  top: -80px;
+  right: -24px;
   grid-row-start: 3;
   grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 6;
 }
 
 #myCheck_02{
   position:relative;
-  left: 258px;
+  top: -54px;
+  right: -24px;
   grid-row-start: 3;
   grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 6;
 }
 
 .sub_01{
+  color: white;
   position:relative;
-  top: -6px;
-  left: 20px;
+  top: -86px;
+  left: 65px;
   grid-row-start: 3;
   grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 6;
   font-size: 10px;
   line-height: 1.2em;
 }
 
 .sub_02{
+  color: white;
   position:relative;
-  top: -6px;
-  left: 280px;
+  top: -60px;
+  left: 65px;
   grid-row-start: 3;
   grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 6;
   font-size: 10px;
   line-height: 1.2em;
 }
@@ -128,11 +135,12 @@
 }
 
 .Header_02{
+  line-height: 1.4em;
   position: relative;
   left: 16px;
   color: white;
   width: 440px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start:1;
@@ -156,25 +164,40 @@
 .body_03{
   color: white;
   line-height: 1.6em;
-  width: 110px;
+  width: 250px;
   font-size: 12px;
   position: relative;
-  left: 160px;
+  left: 18px;
   top: 148px;
   grid-column-start: 5;
   grid-column-end: 6;
-  grid-row-start:1;
+  grid-row-start:2;
   grid-row-end:3;
   z-index: 1;
 }
 
 .empty_02{
-  background: rgb(120, 120, 120);
+  background: white;
   position: relative;
   left: 40px;
   top: 190px;
-  width: 80px;
-  height: 25px;
+  width: 300px;
+  height: 40px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:2;
+  z-index: 2;
+}
+
+.body_04{
+  letter-spacing: 2px;
+  color: white;
+  position: relative;
+  left: 40px;
+  top: 300px;
+  width: 300px;
+  height: 40px;
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start:1;
@@ -183,17 +206,32 @@
 }
 
 .empty_03{
-  background: rgb(120, 120, 120);
+  letter-spacing: 2px;
+  background: white;
   position: relative;
   left: 40px;
-  top: 320px;
-  width: 80px;
-  height: 25px;
+  top: 400px;
+  width: 300px;
+  height: 40px;
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start:1;
   grid-row-end:2;
   z-index: 3;
+}
+
+.body_05{
+  color: white;
+  position: relative;
+  left: 40px;
+  top: 90px;
+  width: 300px;
+  height: 40px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:2;
+  z-index: 2;
 }
 
                 </style>
@@ -203,15 +241,17 @@
 
 <div id="myGrid">
 
-<p class="Header"> Thank you for shopping with us </p> 
+<p class="Header">Thank you for shopping with us</p>
 
 <p class="body"><strong class="Item">Charcoal Trapper</strong></p>
 
-<p class="Header_02">Finely crafted year round hat with convenient side flaps used to provide warmth</p>
-
-<p class="body_02">enter card #<br /><br />id<br />name<br /> address<br />shipping method</p>
+<p class="Header_02" style="font-size: 10px;">Finely crafted year round hat with convenient<br />side flaps used to provide warmth</p>
 
 <p class="body_03"><em>With a large selection of hats in stock, from trappers to sharp rimmed caps, we got you covered. Style on hatgoers, style on.</em></p>
+
+<p class="body_04"><em>Card #:</em></p>
+
+<p class="body_05"><em>Address:</em></p>
 
 <p class="sub_01">Want exclusive packaging, earn 15% off on your next in store purchase</p>
 

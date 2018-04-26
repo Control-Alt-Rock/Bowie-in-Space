@@ -80,6 +80,22 @@
   z-index: -1;
 }
 
+#button_01{
+  position: relative;
+  left: 120px;
+  top: -80px;
+  overflow: hidden;
+  width: 400px;
+  height: 75px;
+  font-size: 24pt;
+  font-family: FranklinGothic URW;
+  color: red;
+  border: 4px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
                 </style>
 
 <div id="myGrid">
@@ -130,6 +146,21 @@ function myFunction1() {
 
 </script>
 
+<input onchange="changer('https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_02.html')" type="button" id="button_01">
+
+    <script>
+    
+    function myFunction_02() {
+    var x = document.getElementById("button_01");
+    x.checked = true;
+    if (x.style.display === "none" || x.style.display === '') {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+      }
+    }
+
+    </script>
 
 <button id="button_02" 
 style="
