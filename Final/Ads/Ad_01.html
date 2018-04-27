@@ -165,34 +165,6 @@
   z-index: 1;
 }
 
-.empty_02{
-  background: white;
-  position: relative;
-  left: 40px;
-  top: 190px;
-  width: 80px;
-  height: 25px;
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start:1;
-  grid-row-end:2;
-  z-index: 2;
-}
-
-.empty_03{
-  background: white;
-  position: relative;
-  left: 40px;
-  top: 320px;
-  width: 80px;
-  height: 25px;
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start:1;
-  grid-row-end:2;
-  z-index: 3;
-}
-
 .image{
   position: relative;
   left: -280px;
@@ -225,11 +197,33 @@
 
 <div class="empty"></div>
 
-<div class="empty_02"></div>
-
-<div class="empty_03"></div>
-
 <img class="image" src="../model_01.jpg">
+
+<form action="/action_page.php">
+<input style="position: relative;
+  left: 380px;
+  top: 170px;
+  width: 80px;
+  height: 25px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:2;
+  z-index: 2;" type="text" name="firstname" value="">
+</form> 
+
+<form action="/action_page.php">
+<input style="position: relative;
+  left: 140px;
+  top: 298px;
+  width: 80px;
+  height: 25px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:2;
+  z-index: 3;" type="text" name="firstname" value="">
+</form> 
 
   <input onchange="changer('http://www.google.com')" type="checkbox" id="myCheck">
 

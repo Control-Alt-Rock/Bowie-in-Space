@@ -39,7 +39,7 @@
   line-height: 1.2em;
   font-width: 80px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
 .body{
@@ -51,6 +51,7 @@
   grid-column-end: 2;
   font-size: 80px;
   line-height: 1.2em;
+  letter-spacing: 2px;
 }
 
 #myDIV{
@@ -177,7 +178,6 @@
 }
 
 .empty_02{
-  background: white;
   position: relative;
   left: 40px;
   top: 190px;
@@ -236,14 +236,11 @@
 
                 </style>
 
-
-
-
 <div id="myGrid">
 
 <p class="Header">Thank you for shopping with us</p>
 
-<p class="body"><strong class="Item">Charcoal Trapper</strong></p>
+<p class="body"><strong>Charcoal Trapper</strong></p>
 
 <p class="Header_02" style="font-size: 10px;">Finely crafted year round hat with convenient<br />side flaps used to provide warmth</p>
 
@@ -259,9 +256,35 @@
 
 <div class="empty"></div>
 
-<div class="empty_02"></div>
+<form action="/action_page.php">
+<input style="letter-spacing: 2px;
+  background: white;
+  position: relative;
+  left: 540px;
+  top: 170px;
+  width: 300px;
+  height: 40px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:2;
+  z-index: 3;" type="text" name="firstname" value="">
+</form> 
 
-<div class="empty_03"></div>
+<form action="/action_page.php">
+<input style="letter-spacing: 2px;
+  background: white;
+  position: relative;
+  left: 380px;
+  top: 380px;
+  width: 300px;
+  height: 40px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start:1;
+  grid-row-end:2;
+  z-index: 3;" type="text" name="firstname" value="">
+</form> 
 
   <input onchange="changer('http://www.google.com')" type="checkbox" id="myCheck">
 
