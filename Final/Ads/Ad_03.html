@@ -70,7 +70,7 @@
   display: none;
 }
 
-#myCheck{
+#thingy_01{
   position:relative;
   top: -80px;
   right: -24px;
@@ -78,9 +78,10 @@
   grid-row-end: 4;
   grid-column-start: 5;
   grid-column-end: 6;
+  z-index: 3;
 }
 
-#myCheck_02{
+#thingy_02{
   position:relative;
   top: -54px;
   right: -24px;
@@ -88,6 +89,7 @@
   grid-row-end: 4;
   grid-column-start: 5;
   grid-column-end: 6;
+  z-index: 3;
 }
 
 .sub_01{
@@ -286,7 +288,9 @@
   z-index: 3;" type="text" name="firstname" value="">
 </form> 
 
-  <input onchange="changer('http://www.google.com')" type="checkbox" id="myCheck">
+
+
+  <input onchange="changer('http://www.google.com')" type="checkbox" id="thingy_01">
 
   <script>
   function changer(url){
@@ -295,7 +299,7 @@
   }
 
   function myFunction_01() {
-    var x = document.getElementById("myCheck");
+    var x = document.getElementById("thingy_01");
     x.checked = true;
     if (x.style.display === "none" || x.style.display === '') {
         x.style.display = "block";
@@ -308,12 +312,12 @@
 
 
 
-<input onchange="changer('https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_02.html')" type="checkbox" id="myCheck_02">
+<input onchange="changer('https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_02.html')" type="checkbox" id="thingy_02">
 
     <script>
     
     function myFunction_02() {
-    var x = document.getElementById("myCheck_02");
+    var x = document.getElementById("thingy_02");
     x.checked = true;
     if (x.style.display === "none" || x.style.display === '') {
         x.style.display = "block";
@@ -323,8 +327,6 @@
     }
 
     </script>
-
-
 
 </head>
 </html>

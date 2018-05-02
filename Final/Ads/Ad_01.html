@@ -225,13 +225,15 @@
   z-index: 3;" type="text" name="firstname" value="">
 </form> 
 
-  <input onchange="changer('http://www.google.com')" type="checkbox" id="myCheck">
+  <input onchange="window.print('../Hat_02.pdf')" type="checkbox" id="myCheck">
 
   <script>
   function changer(url){
   console.log('yop')
   window.location.href = url
   }
+
+
 
   function myFunction_01() {
     var x = document.getElementById("myCheck");
