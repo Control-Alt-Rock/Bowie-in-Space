@@ -174,11 +174,26 @@
   z-index: -3;
 }
 
+@media screen {
+  #printOnlyImage {
+    display:none;
+  }
+}
+
+@media print {
+  #screen {
+    display:none;
+  }
+  #printOnlyImage {
+    display:block;
+  }
+}
+
                 </style>
 
 
-
-
+<img id="printOnlyImage" src="../Hat_02.svg">
+<div id="screen">
 <div id="myGrid">
 
 <p class="Header"> 15% <br /> OFF </p> 
@@ -265,7 +280,7 @@
 
     </script>
 
-
+</div>
 
 </head>
 </html>

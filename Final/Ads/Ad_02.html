@@ -107,8 +107,25 @@
   grid-column-start: 2;
   grid-column-end: 4;
 }
+
+@media screen {
+  #printOnlyImage {
+    display:none;
+  }
+}
+
+@media print {
+  #screen {
+    display:none;
+  }
+  #printOnlyImage {
+    display:block;
+  }
+}
                 </style>
 
+<img id="printOnlyImage" src="../Hat_02.svg">
+<div id="screen">
 <div id="myGrid">
 
 <p class="Header"> In Store Only </p> 
@@ -117,11 +134,13 @@
 
 <img class="image" src="../Hat_Lone.jpg">
 
-<a class="button_01" rel="stylesheet" media="print" href="../HERE_IS_YOUR_HAT.pdf"><em>check out our collection</em></a>
+<a class="button_01" href="../Hat_02.svg" onclick="window.print();return false;"><em>check out our collection</em></a>
 
-<a class="button_02" href="https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_03.html"><em>miss out on the time of your life<em></a>
+
+<a class="button_02" href="https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_03.html"><em>miss out on the time of your life</em></a>
 
 <pre class="code"></pre>
 
+</div>
 </head>
 </html>

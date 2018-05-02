@@ -236,8 +236,26 @@
   z-index: 2;
 }
 
+@media screen {
+  #printOnlyImage {
+    display:none;
+  }
+}
+
+@media print {
+  #screen {
+    display:none;
+  }
+  #printOnlyImage {
+    display:block;
+  }
+}
+
                 </style>
 
+
+<img id="printOnlyImage" src="../Hat_03.svg">
+<div id="screen">
 <div id="myGrid">
 
 <p class="Header">Thank you for shopping with us</p>
@@ -288,9 +306,7 @@
   z-index: 3;" type="text" name="firstname" value="">
 </form> 
 
-
-
-  <input onchange="changer('http://www.google.com')" type="checkbox" id="thingy_01">
+<input onchange="window.print('href=Hat_03.html')" type="checkbox" id="thingy_02">
 
   <script>
   function changer(url){
@@ -312,7 +328,7 @@
 
 
 
-<input onchange="changer('https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_02.html')" type="checkbox" id="thingy_02">
+<input onchange="changer('https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_02.html')" type="checkbox" id="thingy_01">
 
     <script>
     
